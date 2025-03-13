@@ -1,0 +1,39 @@
+form{
+    margin: 25px;
+
+}
+.input-container{
+    margin:15px;
+    display: flex;
+    flex-direction: column;
+}
+.input-container div{
+    margin:5px;
+}
+input:focus{
+    outline: none;
+    border: 1px solid #56f62a;
+}
+.Gender{
+    display :flex;
+    flex-direction: row;
+    margin:10px;
+}
+.Gender>*{
+    margin: 5px;
+}
+.selection{
+    margin-left: 15px;
+}
+.submit{
+    margin-left:100px;
+}
+.submit>button{
+    outline: none;
+    border:none;
+    border-radius: 5px;
+    background-color:#ccc;
+}
+button:hover{
+    background-color:#56f62a;
+}

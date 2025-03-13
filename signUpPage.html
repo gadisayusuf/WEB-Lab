@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <form>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css">
+  <title>Form</title>
+</head>
+
+<body>
+  <form>
+    <div class="input-container">
       <div>
         <label for="FirstName">First Name:</label>
         <input type="text" id="FirstName" name="FirstName" />
@@ -27,29 +31,37 @@
         <label for="">Confirm password:</label>
         <input type="password" id="ConfirmPassword" name="confirmPassword" />
       </div>
-      <div class="Gender">
-        <h2>Gender</h2>
-        <div>
-          <label for="male">Male</label>
-          <input type="radio" id="male" name="male" />
-        </div>
-        <div>
-          <label for="female">Female</label>
-          <input type="radio" id="female" name="female" />
-        </div>
-        <label for="dep">Chose your Department</label>
-        <select name="dep" id="dep">
-          <option value="IT">IT</option>
-          <option value="HR">HR</option>
-          <option value="Finance">Finance</option>
-          <option value="Marketing">Marketing</option>
-        </select>
+    </div>
+
+    <div class="Gender">
+      <legend>Gender:</legend>
+      <div>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" />
       </div>
       <div>
-        <button type="submit">Sign Up</button>
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" />
       </div>
-    </form>
+    </div>
+    <div class="selection">
+      <label for="dep">Choose Department:</label>
+      <select name="dep" id="dep">
+        <option value="IT">IT</option>
+        <option value="HR">HR</option>
+        <option value="Finance">Finance</option>
+        <option value="Marketing">Marketing</option>
+      </select>
+    </div>
+    <br />
+    <br />
+    <div class="submit">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+  </div>
 
-    <script src="main.js"></script>
-  </body>
+  <script src="main.js"></script>
+</body>
+
 </html>
